@@ -1,0 +1,115 @@
+#container {
+  text-align: center;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background-color: darkcyan;
+  transform: skew(0, -7.5deg) translateY(-90px);
+}
+.headerTextContainer {
+  transform: skew(0, 7.5deg) translateY(150px);
+}
+#headerText {
+  font-size: 100px;
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+}
+button {
+  border-style: outset;
+  font-size: 15px;
+}
+button:hover {
+  background: gray;
+  cursor: pointer;
+}
+button:active {
+  background: gray;
+  box-shadow: 0 2px rgb(72, 72, 72);
+  transform: translateY(2px);
+  cursor: pointer;
+}
+#fav {
+  font-family: "Permanent Marker", cursive;
+}
+.image {
+  width: 300px;
+  border-radius: 8px;
+  padding: 2px;
+  margin: 0 auto;
+}
+.imageBanner {
+  display: grid;
+  grid-template-rows: 1fr;
+  margin: 0 auto;
+  max-width: 400px;
+}
+.bigger {
+  position: relative;
+  align-items: center;
+  width: 370px;
+  z-index: 4;
+}
+.smaller {
+  display: none;
+}
+#text {
+  display: block;
+  margin: 0 auto;
+  max-width: 400px;
+  text-align: center;
+  padding-top: 10px;
+  justify-content: center;
+}
+#textBox {
+  background-color: gray;
+  border-radius: 5px;
+  border: 3px solid gray;
+  border-style: outset;
+  padding: 5px;
+  margin: 5px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: antiquewhite;
+}
+#footer {
+  font-family: "Permanent Marker", cursive;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: gray;
+}
+#theme {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.backgroundPicture {
+  background: rgb(89, 89, 89) !important;
+}
+@media (max-width: 500px) {
+  .header {
+    height: 50vh;
+  }
+}
+@media (max-width: 415px) {
+  .header {
+    height: 45vh;
+  }
+}
+
+@media (max-width: 290px) {
+  .header {
+    height: 40vh;
+  }
+  #headerText {
+    font-size: 60px;
+  }
+}
